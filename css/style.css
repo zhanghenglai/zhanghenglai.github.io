@@ -1,0 +1,211 @@
+/*
+Mobile first: Navigation buttons are stacked 2x2. Images in "Resume" and "Writing Sample #1" are stacked on top of each other. Figures in "Writing Sample #2" and photos in "Photography"--are set to 100% width. Margins for block quotes are set at 50px.
+*/
+
+div {
+    font-size: 100%;
+    margin: auto;
+    width: 365px;
+}
+
+nav {
+    position: fixed;
+}
+
+header, section {
+    border-bottom: 3px;
+    border-bottom-color: #696969;
+    border-bottom-style: dotted;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+}
+
+.button {
+    background-color: #696969;
+    border: 3px;
+    border-color: #696969;
+    border-radius: 3px;
+    border-style: solid;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "TW Cen MT", Tahoma, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 3px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    width: 174.75px;
+}
+
+.button:hover{
+    background-color: #ffffff;
+    color: #696969;
+}
+
+a {
+    color: #696969;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4169E1;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    background-color: #696969;
+    border: 3px;
+    border-color: #696969;
+    border-radius: 3px;
+    border-style: solid;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "TW Cen MT", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 65px;
+    padding: 3px;
+    text-align: center;
+    width: 365px;
+}
+
+h2 ~ h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin-left: 3px;
+    padding-left: 3px;
+}
+
+div p, ul, ol {
+    font-family: "Tw Cen MT", Tahoma, sans-serif;
+    font-size: 1rem;
+    margin-left: 3px;
+    padding-left: 3px;
+}
+
+blockquote {
+    border: 3px;
+    border-color: #696969;
+    border-style: dotted;
+    color: #696969;
+    display: table;
+    font-family: "Times New Roman", serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 6px;
+}
+
+figure {
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption, .footer {
+    font-family: "Tw Cen MT", "Tahoma", sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.noborder{
+    border-bottom: none;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.footer {
+    color: #696969;
+}
+
+/*
+Tablet screen: Content and accompanying elements (top-level heading, dotted lines, etc.) are wider. Navigation buttons expand across a single row. Images in "Resume" and "Writing Sample #1" are "square" with the text. Figures in "Writing Sample #2" and photos in "Photography" are set to 600px wide. Margins for block quotes are increased to 100px.
+*/
+
+@media only screen and (min-width: 768px) {
+    div {
+        width: 755px;
+    }
+
+    figure img.paperfig {
+        width: 600px;
+    }
+
+    figure img {
+        width: 600px;
+    }
+
+    .square {
+        float: left;
+        margin-top: 6px;
+        margin-bottom: 12px;
+        padding-right: 24px;
+    }
+
+    .nobreak {
+        display: none;
+    }
+
+    h1 {
+        margin-top: 33px;
+        width: 755px;
+    }
+
+    .button {
+        width: 177.25px;
+    }
+
+    blockquote {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+/*
+Computer screen: Content and accompanying elements (top-level heading, dotted lines, etc.) are wider. Navigation buttons are also wider. Photos in "Photography" are set to 1000px wide, while figures in "Writing Sample #2" remain 600px wide. Margins for block quotes are increased to 150px.
+*/
+
+@media only screen and (min-width: 1020px) {
+    div {
+        width: 1000px;
+    }
+
+    h1 {
+        margin-top: 33px;
+        width: 1000px;
+    }
+
+    .button {
+        width: 238.5px;
+    }
+
+    figure img {
+        width: 1000px;
+    }
+
+    figure.paperfig img {
+        width: 600px;
+    }
+
+    blockquote {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
